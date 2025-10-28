@@ -388,14 +388,6 @@
         // ⚠️ IMPORTANT: Yahan apna ACTUAL Google Apps Script Web App URL daalein
         // URL aisa hoga: https://script.google.com/macros/s/AKfycbxXXXXXXXXXX/exec
         const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbxk9KgYfkId2aO3xO6w533UchiJ1r9GuNpkfYtr6c7yJbfF017fiCcJ8FNygj3oSXX5fg/exec';
-        
-        // Check if URL is set properly
-        if (SCRIPT_URL === '') {
-            alert('⚠️ ERROR: Google Apps Script URL nahi daala gaya hai!\n\nLine 243 par jaake SCRIPT_URL mein apna deployment URL paste karein.');
-        }
-
-        let allBookings = [];
-        let isEditing = false;
 
         // Load bookings on page load
         window.addEventListener('load', loadBookings);
